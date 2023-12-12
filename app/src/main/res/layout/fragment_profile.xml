@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:elevation="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gradiant2" />
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:background="@drawable/side_nav_bar"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+
+
+
+            <TextView
+                android:id="@+id/id_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:text="User Name"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_userEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_userName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="user email id"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/contactImageView"
+                    android:src="@drawable/contact"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/id_contactNo"
+                    android:text="Contact Number"
+                    android:layout_toRightOf="@id/contactImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:text="Contact Number"
+                    android:layout_toRightOf="@id/contactImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/aadharImageView"
+                    android:src="@drawable/aadhaar"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/id_aadharNo"
+                    android:text="Aadhar Number"
+                    android:layout_toRightOf="@id/aadharImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:text="Aadhar Number"
+                    android:layout_toRightOf="@id/aadharImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/birthDateImageView"
+                    android:src="@mipmap/birthdate"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/id_birthDate"
+                    android:text="Birth Date"
+                    android:layout_toRightOf="@id/birthDateImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:text="Birth Date"
+                    android:layout_toRightOf="@id/birthDateImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/addressImageView"
+                    android:src="@mipmap/address"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/id_address"
+                    android:text="Address939 38 3438 398 3842 8934 87928374 9374 3297 9 83498"
+                    android:layout_toRightOf="@id/addressImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:text="Address"
+                    android:layout_below="@id/id_address"
+                    android:layout_toRightOf="@id/addressImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:layout_marginHorizontal="15dp"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/pinCodeImageView"
+                    android:src="@mipmap/pincode"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/id_pinCode"
+                    android:text="Pin Code"
+                    android:layout_toRightOf="@id/pinCodeImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:text="Pin Code"
+                    android:layout_toRightOf="@id/pinCodeImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/profileDetailsLayout"
+                android:padding="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:id="@+id/genderImageView"
+                    android:src="@mipmap/gender"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:id="@+id/id_gender"
+                    android:text="Gender"
+                    android:layout_toRightOf="@id/genderImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:text="Gender"
+                    android:layout_toRightOf="@id/genderImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="17dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/profile_circular_border_imageview"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile">
+
+            <ImageView
+                android:id="@+id/user_profile_photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile" />
+
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>

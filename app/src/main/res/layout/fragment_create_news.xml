@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral20"
+    android:orientation="vertical"
+    tools:context="ui.createnews.CreateNewsFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/newsImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:elevation="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder_view" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#009688"
+                android:text="Add Image"
+                android:textColor="#FFFFFF" />
+
+
+            <EditText
+                android:id="@+id/newsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Title..."
+                android:maxLines="100"
+                android:outlineAmbientShadowColor="@color/teal_200"
+                android:outlineSpotShadowColor="@color/teal_200"
+                android:textColor="@color/whiteTextColor"
+                android:textColorHint="#959595"
+
+                />
+
+            <EditText
+                android:id="@+id/newsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Description..."
+                android:maxLines="1000"
+                android:outlineAmbientShadowColor="@color/teal_200"
+                android:outlineSpotShadowColor="@color/teal_200"
+                android:textColor="@color/whiteTextColor"
+                android:textColorHint="#959595" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/postNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#EC407A"
+                android:text="Post News"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

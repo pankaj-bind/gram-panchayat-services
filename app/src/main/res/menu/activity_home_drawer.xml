@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Upcoming Projects/Services" />
+
+        <item
+            android:id="@+id/nav_create_news"
+            android:icon="@drawable/services"
+            android:title="Create News" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/person"
+            android:title="View Your Profile" />
+
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/edit_profile"
+            android:title="Edit Your Profile" />
+
+
+        <item
+            android:id="@+id/nav_file_complaint"
+            android:icon="@drawable/complaint"
+            android:title="File Complaint" />
+
+        <item
+            android:id="@+id/nav_view_your_complaint"
+            android:icon="@drawable/filed_complaint"
+            android:title="View Your Complaints" />
+
+        <item
+            android:id="@+id/nav_pending_complaints"
+            android:icon="@drawable/pending_complaints"
+            android:title="Pending Complaints" />
+
+        <item
+            android:id="@+id/nav_view_all_complaints_resolved"
+            android:icon="@drawable/all_resolved_complaints"
+            android:title="Resolved Complaints" />
+
+        <item
+            android:id="@+id/nav_view_all_complaints_rejected"
+            android:icon="@drawable/rejected"
+            android:title="Rejected Complaints" />
+
+    </group>
+</menu>
